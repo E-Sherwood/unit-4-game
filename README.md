@@ -1,1 +1,2 @@
-# unit-4-game
+A simple jQuery "rpg" game.
+<--------------------------->

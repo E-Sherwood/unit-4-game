@@ -1,0 +1,32 @@
+<~~~~~~~~>
+game flow
+<~~~~~~~~>
+-player chooses 1 of 4 characters
+-player chooses 1 of remaining characters as opponent
+-battle
+-if lose ~ game over
+-if win, repeat line 4-5
+-repeat process until game over or no opponents remain
+
+<~~~~~>
+layout
+<~~~~~>
+-all characters appear in "choose character" section
+-player character remains in area once chosen
+-unchosen characters move to "opponents" section
+-chosen opponent moves to "defender" section
+-attack button below player
+-displayed hp bar
+-defeated opponents removed from screen (show "defeated" tag/styling?)
+-smaller "you win" messages for individual battles
+-larger "you win" message for total game win
+
+<~~~~~>
+aspects
+<~~~~~>
+-each character has hp, base attack power(bap), counter attack power (cap)
+-each player attack increases bap +bap
+-opponents utilize static cap (does not increase)
+-all stats of characters differ
+-no healing/recovery of hp
+-all characters able to win and lose (strategy is choosing opponents with lower cap at beginning to raise player bap)
