@@ -31,6 +31,6 @@ var Jareth = {
     bio: "A mysterious king with magical abilities, fond of toying with mortals.",
     portrait: src = "assets/images/jareth2.jpg"
 }
-var player
-var defender
+var player 
+var defender 
 

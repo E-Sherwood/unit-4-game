@@ -130,16 +130,29 @@ footer {
 }
 #player {
     clear: right;
+    display: none;
+}
+#defender {
+    display: none;
 }
 #opponent1 {
     float:left;
     padding: 5px;
+    display: none;
 }
 #opponent2 {
     float:left;
     padding: 5px;
+    display: none;
 }
 #opponent3 {
     float:left;
     padding: 5px;
+    display: none;
+}
+#remaining1 {
+    visibility: hidden;
+}
+#remaining2 {
+    visibility: hidden;
 }
