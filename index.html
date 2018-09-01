@@ -48,7 +48,7 @@
             <button class="charButton outline" id="jarethSelect">Select</button>
         </div>
         <div id="player"></div>
-        <div><button id="attk">Cast</button></div>
+        <div id="attk"><button id="attk" style: display="hidden">Cast</button></div>
         <!--hidden until opponent is chosen-->
         <div id="opponents">
             <div id="opponent1"></div>
@@ -111,21 +111,26 @@
             $("#yenBox").hide();
             $("#jarethBox").hide();
             $("#player").html('<img src="assets/images/merlin.jpg" style: height="250px"; width="175px"; padding="10px"/>');
+            $("#player").show();
             $("#opponent1").html('<img src="assets/images/dark-magician.png" ; style: height="250px" ; width="175px";/>')
             $("#opponent2").html('<img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px"/>')
             $("#opponent3").html('<img src="assets/images/jareth2.jpg" ;style: height="250px" ; width="175px"/>')
             player = Merlin
             if (player = Merlin) {
                 $("#opponents").hide();
-                $("#opponent1").click($("#defender").html('<img src="assets/images/dark-magician.png" style: height="250px"; width="175px"; padding="10px"/>'));
-                $("#attk").show();
-                $("#remaining1").html('<img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px"/>');
-                $("#remaining2").html('<img src="assets/images/jareth2.jpg" ;style: height="250px" ; width="175px"/>');
+                if ($("#opponent1").click){
+                    ($("#defender").html('<img src="assets/images/dark-magician.png" style: height="250px"; width="175px"; padding="10px"/>'));
+                    $("#defender").show();
+                    $("#attk").show();
+                    $("#remaining1").html('<img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px"/>');
+                    $("#remaining1").show();
+                    $("#remaining2").html('<img src="assets/images/jareth2.jpg" ;style: height="250px" ; width="175px"/>');
+                    $("#remaining2").show();
             }
             else {
                 $("#wrapper").hide()
             }
-        });
+        }});
         $("#yenBio").click(function () {
             alert(Yen.bio)
         })
@@ -151,10 +156,10 @@
                 $("#wrapper").hide()
             }
         });
-        $("#jarethBio").click(function () {
+    $("#jarethBio").click(function () {
             alert(Jareth.bio)
         })
-        $("#jarethSelect").click(function () {
+    $("#jarethSelect").click(function () {
             $("#direction").hide();
             $("#darkMagicianBox").hide();
             $("#merlinBox").hide();
@@ -179,12 +184,11 @@
             $("#remaining1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px"/>');
             $("#remaining2").html('<img src="assets/images/dark-magician.png" ;style: height="250px" ; width="175px"/>');
                 }});
-            if ($("#opponent3").click) {
+        if ($("#opponent3").click) {
             $("#defender").html('<img src="assets/images/dark-magician.png" style: height="250px"; width="175px"; padding="10px";/>')
             $("#attk").show();
-            $("#remaining1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px"/>');
-            $("#remaining2").html('<img src="assets/images/yen.jpg" style: height="250px" ; width="175px"/>')
-                };
+            $("#remaining1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px"/>')
+            $("#remaining2").html('<img src="assets/images/yen.jpg" style: height="250px" ; width="175px"/>')}
             //else  {
             //$("#wrapper").hide()
         //};
