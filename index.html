@@ -21,36 +21,40 @@
     </div>
     <!--on click, hide all and start game-->
     <main id="wrapper">
-        <div id="direction">Choose your Arcane Champion</div>
+        <div class="outline" id="direction">Choose your Arcane Champion</div>
         <!-- <div id="choose">.</div> -->
-        <div class="playerBox">
+        <div class="playerBox" id="darkMagicianBox">
             <img src="assets/images/dark-magician.png" ; style: height="250px" ; width="175px" ; z-index="1" ; />
             <div class="outline" id="p1">Dark Magician</div>
-            <button class="charButton"  id="dmBio">Bio</button>
-            <button class="charButton" id="dmSelect">Select</button>
+            <button class="charButton outline" id="dmBio">Bio</button>
+            <button class="charButton outline" id="dmSelect">Select</button>
         </div>
-        <div class="playerBox">
+        <div class="playerBox" id="merlinBox">
             <img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px" ; z-index="1" ;/>
             <div class="outline" id="p2">Merlin Ambrosius</div>
-            <button class="charButton" id="merlinBio">Bio</button>
-            <button class="charButton" id="merlinSelect">Select</button>
+            <button class="charButton outline" id="merlinBio">Bio</button>
+            <button class="charButton outline" id="merlinSelect">Select</button>
         </div>
-        <div class="playerBox">
+        <div class="playerBox" id="yenBox">
             <img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px" ; z-index="1" ;/>
             <div class="outline" id="p3">Yennefer of Vengerberg</div>
-            <button class="charButton" id="yenBio">Bio</button>
-            <button class="charButton" id="yenSelect">Select</button>
+            <button class="charButton outline" id="yenBio">Bio</button>
+            <button class="charButton outline" id="yenSelect">Select</button>
         </div>
-        <div class="playerBox">
+        <div class="playerBox" id="jarethBox">
             <img src="assets/images/jareth2.jpg" ;style: height="250px" ; width="175px" ; z-index="1" ;/>
             <div class="outline" id="p4">Jareth the Goblin King</div>
-            <button class="charButton" id="jarethBio">Bio</button>
-            <button class="charButton" id="jarethSelect">Select</button>
+            <button class="charButton outline" id="jarethBio">Bio</button>
+            <button class="charButton outline" id="jarethSelect">Select</button>
         </div>
         <div id="player"></div>
         <div><button id="attk">Cast</button></div>
         <!--hidden until opponent is chosen-->
-        <div id="opponents"></div>
+        <div id="opponents">
+            <div id="opponent1"></div>
+            <div id="opponent2"></div>
+            <div id="opponent3"></div>
+        </div>
         <div id="defender"></div>
         <div id="win-lose"></div>
 
@@ -75,26 +79,65 @@
         })
         $("#dmSelect").click(function () {
             $("#direction").hide();
-
+            $("#darkMagicianBox").hide();
+            $("#merlinBox").hide();
+            $("#yenBox").hide();
+            $("#jarethBox").hide();
+            $("#player").html('<img src="assets/images/dark-magician.png" style: height="250px"; width="175px"; padding="10px"/>');
+            $("#opponent1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px";/>')
+            $("#opponent2").html('<img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px"/>')
+            $("#opponent3").html('<img src="assets/images/jareth2.jpg" ;style: height="250px" ; width="175px"/>')
+            player = DarkMagician;
         })
         $("#merlinBio").click(function () {
             alert(Merlin.bio)
         })
         $("#merlinSelect").click(function () {
             $("#direction").hide();
+            $("#darkMagicianBox").hide();
+            $("#merlinBox").hide();
+            $("#yenBox").hide();
+            $("#jarethBox").hide();
+            $("#player").html('<img src="assets/images/merlin.jpg" style: height="250px"; width="175px"; padding="10px"/>');
+            $("#opponent1").html('<img src="assets/images/dark-magician.png" ; style: height="250px" ; width="175px";/>')
+            $("#opponent2").html('<img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px"/>')
+            $("#opponent3").html('<img src="assets/images/jareth2.jpg" ;style: height="250px" ; width="175px"/>')
+            player = Merlin
         })
         $("#yenBio").click(function () {
             alert(Yen.bio)
         })
         $("#yenSelect").click(function () {
             $("#direction").hide();
+            $("#darkMagicianBox").hide();
+            $("#merlinBox").hide();
+            $("#yenBox").hide();
+            $("#jarethBox").hide();
+            $("#player").html('<img src="assets/images/yen.jpg" style: height="250px"; width="175px"; padding="10px"/>');
+            $("#opponent1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px";/>')
+            $("#opponent2").html('<img src="assets/images/dark-magician.png" ; style: height="250px" ; width="175px"/>')
+            $("#opponent3").html('<img src="assets/images/jareth2.jpg" ;style: height="250px" ; width="175px"/>')
+            player = Yen
         })
         $("#jarethBio").click(function () {
             alert(Jareth.bio)
         })
         $("#jarethSelect").click(function () {
             $("#direction").hide();
+            $("#darkMagicianBox").hide();
+            $("#merlinBox").hide();
+            $("#yenBox").hide();
+            $("#jarethBox").hide();
+            $("#player").html('<img src="assets/images/jareth2.jpg" style: height="250px"; width="175px"; padding="10px"/>');
+            $("#opponent1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px";/>')
+            $("#opponent2").html('<img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px"/>')
+            $("#opponent3").html('<img src="assets/images/dark-magician.png" ;style: height="250px" ; width="175px"/>')
+            player = Jareth
         })
+    
+    
+    
+    
     </script>
 </body>
 

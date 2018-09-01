@@ -98,13 +98,48 @@ footer {
     font-family: 'Miltonian Tattoo', cursive;
     padding: 10px;
     text-align: center;
-    font-size: 24px;
+    font-size: 25px;
     background-color: #666;
     border: none;
 }
 #dmBio {
     margin-top: 30px;
+    color: #8E16FF;
 }
 #dmSelect {
     margin-top: 30px;
+    color: #8E16FF;
+}
+#merlinBio {
+    color: red;
+}
+#merlinSelect {
+    color: red;
+}
+#yenBio {
+    color: #3A58B6;
+}
+#yenSelect {
+    color: #3A58B6;
+}
+#jarethBio {
+    color: #BFC1C8;
+}
+#jarethSelect {
+    color: #BFC1C8;
+}
+#player {
+    clear: right;
+}
+#opponent1 {
+    float:left;
+    padding: 5px;
+}
+#opponent2 {
+    float:left;
+    padding: 5px;
+}
+#opponent3 {
+    float:left;
+    padding: 5px;
 }

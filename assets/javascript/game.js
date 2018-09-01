@@ -5,7 +5,7 @@ var DarkMagician = {
     hp: 100,
     name: "Dark Magician",
     bio: "A magician of immense power favored by a certain King of Games.",
-    portrait: src="assets/images/dark-magician.png"
+    portrait: src = "assets/images/dark-magician.png"
 }
 var Merlin = {
     battk: 6,
@@ -13,7 +13,7 @@ var Merlin = {
     hp: 85,
     name: "Merlin",
     bio: "A powerful wizard featured in countless legends.",
-    portrait: src="assets/images/merlin.jpg"
+    portrait: src = "assets/images/merlin.jpg"
 }
 var Yen = {
     battk: 7,
@@ -21,7 +21,7 @@ var Yen = {
     hp: 75,
     name: "Yennefer of Vengerberg",
     bio: "An unparalleled sorceress, her beauty only matched with her biting wit.",
-    portrait: src="assets/images/yen.jpg"
+    portrait: src = "assets/images/yen.jpg"
 }
 var Jareth = {
     battk: 4,
@@ -29,9 +29,8 @@ var Jareth = {
     hp: 115,
     name: "Jareth the Goblin King",
     bio: "A mysterious king with magical abilities, fond of toying with mortals.",
-    portrait: src="assets/images/jareth2.jpg"
+    portrait: src = "assets/images/jareth2.jpg"
 }
-// DarkMagician = document.getElementById("p1");
-// Merlin = document.getElementById("p2");
-// Yen = document.getElementById("p3");
-// Jareth = document.getElementById("p4");
+var player
+var defender
+
