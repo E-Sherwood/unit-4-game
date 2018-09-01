@@ -12,7 +12,7 @@ var Merlin = {
     cattk: 3,
     hp: 85,
     name: "Merlin",
-    bio: "A powerful wizard featured in legends.",
+    bio: "A powerful wizard featured in countless legends.",
     portrait: src="assets/images/merlin.jpg"
 }
 var Yen = {
@@ -31,7 +31,7 @@ var Jareth = {
     bio: "A mysterious king with magical abilities, fond of toying with mortals.",
     portrait: src="assets/images/jareth2.jpg"
 }
-DarkMagician = document.getElementById("p1");
-Merlin = document.getElementById("p2");
-Yen = document.getElementById("p3");
-Jareth = document.getElementById("p4");
+// DarkMagician = document.getElementById("p1");
+// Merlin = document.getElementById("p2");
+// Yen = document.getElementById("p3");
+// Jareth = document.getElementById("p4");

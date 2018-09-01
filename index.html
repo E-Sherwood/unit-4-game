@@ -8,6 +8,7 @@
     <title>MAGE FIGHT</title>
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Miltonian+Tattoo" rel="stylesheet">
 </head>
 
 <body>
@@ -20,12 +21,32 @@
     </div>
     <!--on click, hide all and start game-->
     <main id="wrapper">
-        <div id="direction">Choose your Magical Champion</div>
-       <!-- <div id="choose">.</div> -->
-        <div class="playerBox" id="p1">-</div>
-        <div class="playerBox" id="p2">--</div>
-        <div class="playerBox" id="p3">---</div>
-        <div class="playerBox" id="p4">----</div>
+        <div id="direction">Choose your Arcane Champion</div>
+        <!-- <div id="choose">.</div> -->
+        <div class="playerBox">
+            <img src="assets/images/dark-magician.png" ; style: height="250px" ; width="175px" ; z-index="1" ; />
+            <div class="outline" id="p1">Dark Magician</div>
+            <button class="charButton"  id="dmBio">Bio</button>
+            <button class="charButton" id="dmSelect">Select</button>
+        </div>
+        <div class="playerBox">
+            <img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px" ; z-index="1" ;/>
+            <div class="outline" id="p2">Merlin Ambrosius</div>
+            <button class="charButton" id="merlinBio">Bio</button>
+            <button class="charButton" id="merlinSelect">Select</button>
+        </div>
+        <div class="playerBox">
+            <img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px" ; z-index="1" ;/>
+            <div class="outline" id="p3">Yennefer of Vengerberg</div>
+            <button class="charButton" id="yenBio">Bio</button>
+            <button class="charButton" id="yenSelect">Select</button>
+        </div>
+        <div class="playerBox">
+            <img src="assets/images/jareth2.jpg" ;style: height="250px" ; width="175px" ; z-index="1" ;/>
+            <div class="outline" id="p4">Jareth the Goblin King</div>
+            <button class="charButton" id="jarethBio">Bio</button>
+            <button class="charButton" id="jarethSelect">Select</button>
+        </div>
         <div id="player"></div>
         <div><button id="attk">Cast</button></div>
         <!--hidden until opponent is chosen-->
@@ -41,28 +62,39 @@
     <script src="assets/javascript/game.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script> 
-        
-        $("#begin").click(function() {
+
+        $("#begin").click(function () {
             $("#welcome").hide();
             $("#direction").show();
             $(".playerBox").show();
             $("#attk").hide();
-            
-        });
-        /* $("#p1").click(function() {
-            
-        })
-        $("#p2").click(function() {
-            
-        })
-        $("#p3").click(function() {
-        
-        })
-        $("#p4").click(function() {
-            
-        }) */
-        //$("#p1").css("backgroundImage", "assets/images/dark-magician.png");
 
+        });
+        $("#dmBio").click(function () {
+            alert(DarkMagician.bio)
+        })
+        $("#dmSelect").click(function () {
+            $("#direction").hide();
+
+        })
+        $("#merlinBio").click(function () {
+            alert(Merlin.bio)
+        })
+        $("#merlinSelect").click(function () {
+            $("#direction").hide();
+        })
+        $("#yenBio").click(function () {
+            alert(Yen.bio)
+        })
+        $("#yenSelect").click(function () {
+            $("#direction").hide();
+        })
+        $("#jarethBio").click(function () {
+            alert(Jareth.bio)
+        })
+        $("#jarethSelect").click(function () {
+            $("#direction").hide();
+        })
     </script>
 </body>
 

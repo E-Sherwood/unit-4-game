@@ -9,3 +9,5 @@ merlin:
 https://www.timelessmyths.com/arthurian/gallery/merlin.jpg
 jareth:
 https://www.deviantart.com/missimoinsane/art/Long-Live-The-Goblin-King-584127520
+background:
+http://genchi.info/images/magic-wallpaper-hd-32.jpg
