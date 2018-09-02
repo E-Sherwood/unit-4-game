@@ -130,29 +130,44 @@ footer {
 }
 #player {
     clear: right;
+    
+}
+#playerTag{
+    font-size: 50px;
+    padding: 5px;
     display: none;
 }
-#defender {
+/* #defender {
+     display: none; 
+} */
+#opponents {
+    float:right;
+    margin-top: -315px;
+    margin-right: 100px;
+}
+#opTag {
+    font-size: 50px;
+    padding: 5px;
     display: none;
 }
 #opponent1 {
     float:left;
     padding: 5px;
-    display: none;
+    /* display: none; */
 }
 #opponent2 {
     float:left;
     padding: 5px;
-    display: none;
+    /* display: none; */
 }
 #opponent3 {
     float:left;
     padding: 5px;
-    display: none;
+    /* display: none; */
 }
-#remaining1 {
-    display: none;
-}
-#remaining2 {
-    display: none;
-}
+/* #remaining1 {
+     display: none; 
+} */
+/* #remaining2 {
+     display: none; 
+} */
