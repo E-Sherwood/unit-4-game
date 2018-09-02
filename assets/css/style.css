@@ -165,9 +165,9 @@ footer {
     padding: 5px;
     /* display: none; */
 }
-/* #remaining1 {
-     display: none; 
-} */
-/* #remaining2 {
-     display: none; 
-} */
+ #remaining1 {
+     float: right; 
+} 
+ #remaining2 {
+    float: right; 
+}
