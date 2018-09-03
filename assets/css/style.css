@@ -37,13 +37,18 @@ footer {
     
 }
 #attk {
-    height: 30px;
-    width: 50px;
-   /* padding: 15px; */
+    color: #fff;
+    font-family: 'Miltonian Tattoo', cursive;
+    padding: 10px;
     align-content: center;
     clear : both;
+    font-size: 25px;
     display: none;
-
+    background-color: #666;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
 }
 #direction {
     display: none;
@@ -130,16 +135,18 @@ footer {
 }
 #player {
     clear: right;
+    margin-left: 50px;
     
 }
 #playerTag{
     font-size: 50px;
     padding: 5px;
     display: none;
+    margin-left: 50px;
 }
-/* #defender {
-     display: none; 
-} */
+#defender {
+     margin-left: 50px; 
+}
 #opponents {
     float:right;
     margin-top: -315px;
@@ -167,9 +174,13 @@ footer {
 }
  #remaining1 {
      float: right; 
+     margin-top: -595px;
+     margin-right: 195px;
 } 
  #remaining2 {
-    float: right; 
+    float: right;
+    margin-top: -595px;
+    margin-right: 425px;
 }
 #op1Select {
     font-family: 'Miltonian Tattoo', cursive;
