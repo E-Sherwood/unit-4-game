@@ -143,7 +143,7 @@ footer {
 #opponents {
     float:right;
     margin-top: -315px;
-    margin-right: 100px;
+    margin-right: 250px;
 }
 #opTag {
     font-size: 50px;
@@ -170,4 +170,38 @@ footer {
 } 
  #remaining2 {
     float: right; 
+}
+#op1Select {
+    font-family: 'Miltonian Tattoo', cursive;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #666;
+    border: none;
+    float: left;
+    margin-top: 254px;
+    margin-right: -95px;
+}
+#op2Select {
+    font-family: 'Miltonian Tattoo', cursive;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #666;
+    border: none;
+    float: left;
+    margin-top: 253px;
+    margin-left: auto;
+    margin-right: -97px;
+}
+#op3Select {
+    font-family: 'Miltonian Tattoo', cursive;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #666;
+    border: none;
+    float: left;
+    margin-top: 256px;
+    margin-right: -93px;
 }
