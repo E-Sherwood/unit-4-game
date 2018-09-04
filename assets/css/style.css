@@ -138,6 +138,11 @@ footer {
     margin-left: 50px;
     
 }
+#playerHP {
+    height: 15px;
+    width: 66px;
+    margin-left: 105px;
+}
 #playerTag{
     font-size: 50px;
     padding: 5px;
@@ -146,6 +151,11 @@ footer {
 }
 #defender {
      margin-left: 50px; 
+}
+#defenderHP {
+    height: 15px;
+    width: 66px;
+    margin-left: 105px;
 }
 #opponents {
     float:right;
