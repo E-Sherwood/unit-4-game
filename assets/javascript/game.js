@@ -33,16 +33,35 @@ var Jareth = {
 }
 
 
-var player 
-var defender
+var player = {}
+var defender = {}
 
-var castSpell = function() {
-    defender.hp - player.attk;
-             console.log("player battk:" + player.battk)
-            document.getElementById("playerHP").innerHTML = "HP : " + player.hp;
-            document.getElementById("defenderHP").innerHTML = "HP : " + defender.hp;
-            
-             console.log("defender hp:" + defender.hp)
-console.log(defender.hp);
+var attackSpell = function () {
 
+    var x = defender.hp - player.battk
+    defender.hp = x
+    console.log("player battk:" + player.battk)
+    
+    console.log("defender hp:" + defender.hp);
+
+    console.log("new defenderhp =" + defender.hp)
+    if (defender.hp <= 0) {
+        alert("battle won");
+        document.getElementById("attk").disabled = true
+        nextBattle();
+    }
+    var y = player.hp - defender.cattk
+    player.hp = y
+    if (player.hp <= 0) {
+        alert("battle lost")
+    }
+    var z = player.battk + Math.floor(player.battk / 2)
+    player.battk = z
+    console.log(player.battk)
+    document.getElementById("playerHP").innerHTML = "HP : " + y;
+    document.getElementById("defenderHP").innerHTML = "HP : " + x;
+}
+var nextBattle = function () {
+        $("#rem1Select").show()
+        $("#rem2Select").show()
 }

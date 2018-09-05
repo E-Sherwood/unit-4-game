@@ -192,6 +192,28 @@ footer {
     margin-top: -595px;
     margin-right: 425px;
 }
+#rem1Select {
+    font-family: 'Miltonian Tattoo', cursive;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #666;
+    border: none;
+    float: left;
+    margin-top: 254px;
+    margin-right: -95px;
+}
+#rem2Select {
+    font-family: 'Miltonian Tattoo', cursive;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #666;
+    border: none;
+    float: left;
+    margin-top: 254px;
+    margin-right: -95px;
+}
 #op1Select {
     font-family: 'Miltonian Tattoo', cursive;
     padding: 10px;
