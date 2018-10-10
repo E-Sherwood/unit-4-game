@@ -31,19 +31,19 @@
             <button class="charButton outline" id="dmSelect">Select</button>
         </div>
         <div class="playerBox" id="merlinBox">
-            <img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px" ; z-index="1" ;/>
+            <img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px" ; z-index="1" ; />
             <div class="outline" id="p2">Merlin Ambrosius</div>
             <button class="charButton outline" id="merlinBio">Bio</button>
             <button class="charButton outline" id="merlinSelect">Select</button>
         </div>
         <div class="playerBox" id="yenBox">
-            <img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px" ; z-index="1" ;/>
+            <img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px" ; z-index="1" ; />
             <div class="outline" id="p3">Yennefer of Vengerberg</div>
             <button class="charButton outline" id="yenBio">Bio</button>
             <button class="charButton outline" id="yenSelect">Select</button>
         </div>
         <div class="playerBox" id="jarethBox">
-            <img src="assets/images/jareth2.jpg" ;style: height="250px" ; width="175px" ; z-index="1" ;/>
+            <img src="assets/images/jareth2.jpg" ;style: height="250px" ; width="175px" ; z-index="1" ; />
             <div class="outline" id="p4">Jareth the Goblin King</div>
             <button class="charButton outline" id="jarethBio">Bio</button>
             <button class="charButton outline" id="jarethSelect">Select</button>
@@ -66,7 +66,7 @@
         </div>
         <div id="defenderHP"></div>
         <div id="defender"></div>
-        
+
 
         <div id="remaining1">
             <button id="rem1Select">Select</div>
@@ -82,266 +82,10 @@
     <footer>Copyright info
         <a href='#'>link to image sources list</a>
     </footer>
-    <script src="assets/javascript/game.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script> 
-
-        $("#begin").click(function () {
-            $("#welcome").hide();
-            $("#direction").show();
-            $(".playerBox").show();
-            $("#attk").hide();
-            $("#rem1Select").hide();
-            $("#rem2Select").hide();
-
-        });
-        $("#dmBio").click(function () {
-            alert(DarkMagician.bio)
-        })
-        $("#dmSelect").click(function () {
-            $("#direction").hide();
-            $("#darkMagicianBox").hide();
-            $("#merlinBox").hide();
-            $("#yenBox").hide();
-            $("#jarethBox").hide();
-            $("#opTag").show();
-            $("#playerTag").show();
-            $("#player").html('<img src="assets/images/dark-magician.png" style: height="250px"; width="175px"; padding="10px"/>');
-            $("#opponent1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px";/>' + '<button id="op1Select">Select</button>')
-            $("#opponent2").html('<img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="op2Select">Select</button>')
-            $("#opponent3").html('<img src="assets/images/jareth2.jpg" ;style: height="250px" ; width="175px"/>' + '<button id="op3Select">Select</button>')
-            player = DarkMagician
-            if (player = DarkMagician) {
-
-                $("#op1Select").click(function () {
-                    $("#defender").html('<img src="assets/images/merlin.jpg" style: height="250px"; width="175px"; padding="10px"/>')
-                    $("#attk").show();
-                    $("#defender").show();
-                    $("#remaining1").html('<img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="rem1Select">Select</div>');
-                    $("#remaining2").html('<img src="assets/images/jareth2.jpg" ;style: height="250px" ; width="175px"/>' + '<button id="rem2Select">Select</button>')
-                    $("#opponents").hide();
-                    defender = Merlin;
-                    $("#rem1Select").hide();
-                    $("#rem2Select").hide();
-                });
-
-
-                $("#op2Select").click(function () {
-                    $("#defender").html('<img src="assets/images/yen.jpg" style: height="250px"; width="175px"; padding="10px"/>');
-                    $("#attk").show();
-                    $("#defender").show();
-                    $("#remaining1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="rem1Select">Select</div>');
-                    $("#remaining2").html('<img src="assets/images/jareth2.jpg" ;style: height="250px" ; width="175px"/>' + '<button id="rem2Select">Select</button>');
-                    $("#opponents").hide();
-                    defender = Yen;
-                    $("#rem1Select").hide();
-                    $("#rem2Select").hide();
-                });
-
-
-                $("#op3Select").click(function () {
-                    $("#defender").html('<img src="assets/images/jareth2.jpg" style: height="250px"; width="175px"; padding="10px";/>')
-                    $("#attk").show();
-                    $("#defender").show();
-                    $("#remaining1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="rem1Select">Select</div>')
-                    $("#remaining2").html('<img src="assets/images/yen.jpg" style: height="250px" ; width="175px"/>' + '<button id="rem2Select">Select</button>')
-                    $("#opponents").hide();
-                    defender = Jareth;
-                    $("#rem1Select").hide();
-                    $("#rem2Select").hide();
-                
-                });
-            if (defender = Merlin) {    
-                 if ($("#rem1Select").click)(function() {
-                    $("#defender").html($('<img src="assets/images/yen.jpg" style: height="250px" ; width="175px"/>'));
-                    $("#rem1Select").hide();
-                    $("#remaining1").hide();
-                    defender = Yen
-                    document.getElementById("attk").disabled = false;
     
-                })
-                };
-            }
-        });
-        $("#merlinBio").click(function () {
-            alert(Merlin.bio)
-        })
-        $("#merlinSelect").click(function () {
-            $("#direction").hide();
-            $("#darkMagicianBox").hide();
-            $("#merlinBox").hide();
-            $("#yenBox").hide();
-            $("#jarethBox").hide();
-            $("#opTag").show();
-            $("#playerTag").show();
-            $("#player").html('<img src="assets/images/merlin.jpg" style: height="250px"; width="175px"; padding="10px"/>');
-            $("#opponent1").html('<img src="assets/images/jareth2.jpg" ; style: height="250px" ; width="175px";/>' + '<button id="op1Select">Select</button>')
-            $("#opponent2").html('<img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="op2Select">Select</button>')
-            $("#opponent3").html('<img src="assets/images/dark-magician.png" ;style: height="250px" ; width="175px"/>' + '<button id="op3Select">Select</button>')
-            player = Merlin
-            if (player = Merlin) {
-
-                $("#op1Select").click(function () {
-                    $("#defender").html('<img src="assets/images/jareth2.jpg" style: height="250px"; width="175px"; padding="10px"/>')
-                    $("#attk").show();
-                    $("#defender").show();
-                    $("#remaining1").html('<img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="rem1Select">Select</div>');
-                    $("#remaining2").html('<img src="assets/images/dark-magician.png" ;style: height="250px" ; width="175px"/>' + '<button id="rem2Select">Select</button>')
-                    $("#opponents").hide();
-                    defender = Jareth;
-                    $("#rem1Select").hide();
-                    $("#rem2Select").hide();
-                });
-
-
-                $("#op2Select").click(function () {
-                    $("#defender").html('<img src="assets/images/yen.jpg" style: height="250px"; width="175px"; padding="10px"/>');
-                    $("#attk").show();
-                    $("#defender").show();
-                    $("#remaining1").html('<img src="assets/images/jareth2.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="rem1Select">Select</div>');
-                    $("#remaining2").html('<img src="assets/images/dark-magician.png" ;style: height="250px" ; width="175px"/>' + '<button id="rem2Select">Select</button>');
-                    $("#opponents").hide();
-                    defender = Yen;
-                    $("#rem1Select").hide();
-                    $("#rem2Select").hide();
-                });
-
-
-                $("#op3Select").click(function () {
-                    $("#defender").html('<img src="assets/images/dark-magician.png" style: height="250px"; width="175px"; padding="10px";/>')
-                    $("#attk").show();
-                    $("#defender").show();
-                    $("#remaining1").html('<img src="assets/images/jareth2.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="rem1Select">Select</div>')
-                    $("#remaining2").html('<img src="assets/images/yen.jpg" style: height="250px" ; width="175px"/>' + '<button id="rem2Select">Select</button>')
-                    $("#opponents").hide();
-                    defender = DarkMagician;
-                    $("#rem1Select").hide();
-                    $("#rem2Select").hide();
-                });
-            }
-        });
-        $("#yenBio").click(function () {
-            alert(Yen.bio)
-        })
-        $("#yenSelect").click(function () {
-            $("#direction").hide();
-            $("#darkMagicianBox").hide();
-            $("#merlinBox").hide();
-            $("#yenBox").hide();
-            $("#jarethBox").hide();
-            $("#opTag").show();
-            $("#playerTag").show();
-            $("#player").html('<img src="assets/images/yen.jpg" style: height="250px"; width="175px"; padding="10px"/>');
-            $("#opponent1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px";/>' + '<button id="op1Select">Select</button>')
-            $("#opponent2").html('<img src="assets/images/jareth2.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="op2Select">Select</button>')
-            $("#opponent3").html('<img src="assets/images/dark-magician.png" ;style: height="250px" ; width="175px"/>' + '<button id="op3Select">Select</button>')
-            player = Yen
-            if (player = Yen) {
-
-                $("#op1Select").click(function () {
-                    $("#defender").html('<img src="assets/images/merlin.jpg" style: height="250px"; width="175px"; padding="10px"/>')
-                    $("#attk").show();
-                    $("#defender").show();
-                    $("#remaining1").html('<img src="assets/images/jareth2.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="rem1Select">Select</div>');
-                    $("#remaining2").html('<img src="assets/images/dark-magician.png" ;style: height="250px" ; width="175px"/>' + '<button id="rem2Select">Select</button>')
-                    $("#opponents").hide();
-                    defender = Merlin;
-                    $("#rem1Select").hide();
-                    $("#rem2Select").hide();
-                });
-
-
-                $("#op2Select").click(function () {
-                    $("#defender").html('<img src="assets/images/jareth2.jpg" style: height="250px"; width="175px"; padding="10px"/>');
-                    $("#attk").show();
-                    $("#defender").show();
-                    $("#remaining1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="rem1Select">Select</div>');
-                    $("#remaining2").html('<img src="assets/images/dark-magician.png" ;style: height="250px" ; width="175px"/>' + '<button id="rem2Select">Select</button>');
-                    $("#opponents").hide();
-                    defender = Jareth;
-                    $("#rem1Select").hide();
-                    $("#rem2Select").hide();
-                });
-
-
-                $("#op3Select").click(function () {
-                    $("#defender").html('<img src="assets/images/dark-magician.png" style: height="250px"; width="175px"; padding="10px";/>')
-                    $("#attk").show();
-                    $("#defender").show();
-                    $("#remaining1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="rem1Select">Select</div>')
-                    $("#remaining2").html('<img src="assets/images/jareth2.jpg" style: height="250px" ; width="175px"/>' + '<button id="rem2Select">Select</button>')
-                    $("#opponents").hide();
-                    defender = DarkMagician;
-                    $("#rem1Select").hide();
-                    $("#rem2Select").hide();
-                });
-            }
-        });
-        $("#jarethBio").click(function () {
-            alert(Jareth.bio)
-        })
-        $("#jarethSelect").click(function () {
-            $("#direction").hide();
-            $("#darkMagicianBox").hide();
-            $("#merlinBox").hide();
-            $("#yenBox").hide();
-            $("#jarethBox").hide();
-            $("#opTag").show();
-            $("#playerTag").show();
-            $("#player").html('<img src="assets/images/jareth2.jpg" style: height="250px"; width="175px"; padding="10px"/>');
-            $("#opponent1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px";/>' + '<button id="op1Select">Select</button>')
-            $("#opponent2").html('<img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="op2Select">Select</button>')
-            $("#opponent3").html('<img src="assets/images/dark-magician.png" ;style: height="250px" ; width="175px"/>' + '<button id="op3Select">Select</button>')
-            player = Jareth
-            if (player = Jareth) {
-
-                $("#op1Select").click(function () {
-                    $("#defender").html('<img src="assets/images/merlin.jpg" style: height="250px"; width="175px"; padding="10px"/>')
-                    $("#attk").show();
-                    $("#defender").show();
-                    $("#remaining1").html('<img src="assets/images/yen.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="rem1Select">Select</div>');
-                    $("#remaining2").html('<img src="assets/images/dark-magician.png" ;style: height="250px" ; width="175px"/>' + '<button id="rem2Select">Select</button>')
-                    $("#opponents").hide();
-                    defender = Merlin;
-                    $("#rem1Select").hide();
-                    $("#rem2Select").hide();
-                });
-
-
-                $("#op2Select").click(function () {
-                    $("#defender").html('<img src="assets/images/yen.jpg" style: height="250px"; width="175px"; padding="10px"/>');
-                    $("#attk").show();
-                    $("#defender").show();
-                    $("#remaining1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="rem1Select">Select</div>');
-                    $("#remaining2").html('<img src="assets/images/dark-magician.png" ;style: height="250px" ; width="175px"/>' + '<button id="rem2Select">Select</button>');
-                    $("#opponents").hide();
-                    defender = Yen;
-                    $("#rem1Select").hide();
-                    $("#rem2Select").hide();
-                });
-
-
-                $("#op3Select").click(function () {
-                    $("#defender").html('<img src="assets/images/dark-magician.png" style: height="250px"; width="175px"; padding="10px";/>')
-                    $("#attk").show();
-                    $("#defender").show();
-                    $("#remaining1").html('<img src="assets/images/merlin.jpg" ; style: height="250px" ; width="175px"/>' + '<button id="rem1Select">Select</div>')
-                    $("#remaining2").html('<img src="assets/images/yen.jpg" style: height="250px" ; width="175px"/>' + '<button id="rem2Select">Select</button>')
-                    $("#opponents").hide();
-                    defender = DarkMagician
-                    $("#rem1Select").hide();
-                    $("#rem2Select").hide();
-                });
-            }
-        });
-        //now for the good shit
-        $("#attk").click(function (){
-            attackSpell();
-            
-        });
-        
-
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
